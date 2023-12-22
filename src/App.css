@@ -1,0 +1,83 @@
+
+.App {
+  font-family: 'Arial', sans-serif;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+}
+.container { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body {
+background-image: url(https://image.slidesdocs.com/responsive-images/background/3d-search-bar-rendered-on-pink-mockup-of-search-engine-website-powerpoint-background_e26166f50c__960_540.jpg);
+background-repeat: no-repeat;
+background-size: cover;}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #f7176d54;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+@keyframes placeholderFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+input::placeholder {
+  animation: placeholderFadeIn 0.3s ease-in-out;
+}
+
+
+button {
+  margin-top: 3%;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #df049d75b0;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s, background-color 0.3s, transform 0.3s;
+  margin-left: 7%;
+  color: RGB(112, 39, 73);
+}
+
+button:hover {
+  color: white;
+  background-color: #b434db48;
+  transform: translateY(-5px) translateZ(0);
+}
+
+button:hover::before {
+  transform: translateY(0) translateZ(0);
+}
